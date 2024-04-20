@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- تعيين ترميز الحروف وتحديد العرض للجهاز -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- عنوان الصفحة -->
+    <title>Environmental Education App</title>
+    <!-- تضمين ملف النمط CSS -->
+    <link rel="stylesheet" href="Styles/styles.css">
+    <!-- تضمين الرموز الخاصة بمكتبة Material Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+    <!-- ترويسة الصفحة -->
+    <header>
+        <!-- عنوان رئيسي -->
+        <h1>Home</h1>
+    </header>
+    <!-- المحتوى الرئيسي للصفحة -->
+    <main >
+        <!-- قسم الترحيب -->
+        <section id="welcome-section">
+            <!-- عنوان فرعي -->
+            <h2>Welcome to our Environmental</h2>
+        </section>
+        <!-- قسم الطقس والأفكار -->
+        <section id="weather-ideas-section">
+            <!-- قسم الطقس -->
+            <section id="weather-section">
+                <!-- عنوان فرعي -->
+                <h2>Today's Weather:</h2>
+                <!-- صورة الطقس -->
+                <img src="images/weather.png" alt="Weather Image" height="170" width="300">
+                <!-- معلومات الطقس -->
+                <p>Temperature: 25°C</p>
+                <p>Condition: Sunny</p>
+                <p>Wind Speed: 10 km/h</p>
+            </section>
+            <!-- قسم الأفكار -->
+            <section id="ideas-section">
+                <!-- عنوان فرعي -->
+                <h2>Simple Ideas for Environmental Protection:</h2>
+                <!-- قائمة للأفكار -->
+                <ul>
+                    <li>Reduce, Reuse, Recycle</li>
+                    <li>Conserve Water and Energy</li>
+                    <li>Use Eco-Friendly Products</li>
+                </ul>
+            </section>
+        </section>
+        
+        <!-- قسم الأزرار -->
+        <section id="buttons-section">
+            <!-- زر للتفاعل مع المجتمع -->
+            <div class="button" onclick="navigateTo('Pages/InteractPage.html')">
+                <i class="material-icons">forum</i>
+                <br>
+                <span>Interact with Community</span>
+            </div>
+            <!-- زر للانضمام لأنشطة المجتمع -->
+            <div class="button" onclick="navigateTo('Pages/CommunityPage.html')">
+                <i class="material-icons">group</i>
+                <br>
+                <span>Join Community Activities</span>
+            </div>
+            <!-- زر للمعلومات البيئية -->
+            <div class="button" onclick="navigateTo('Pages/InfoPage.html')">
+                <div style="text-align: center;">
+                    <i class="material-icons">info</i>
+                    <br>
+                    <span>Environmental Information</span>
+                </div>
+            </div>
+            <!-- زر لأهداف التنمية المستدامة -->
+            <div class="button" onclick="navigateTo('Pages/SustainableGoalsPage.html')">
+                <div style="text-align: center;">
+                    <i class="material-icons">eco</i>
+                    <br>
+                    <span>Sustainable Goals</span>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- تضمين ملف السكريبت -->
+    <script src="Script/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+/* تنسيق النصوص والتخطيط العام للصفحة */
+body {
+    font-family: Arial, sans-serif; /* نوع الخط */
+    margin: 0; /* إزالة هوامش الصفحة */
+    padding: 0; /* إزالة الحشوات الافتراضية */
+    background-color: #f2f2f2; /* لون خلفية الصفحة */
+}
+
+/* تنسيق ترويسة الصفحة */
+header {
+    background-color: #4CAF50; /* لون خلفية الترويسة */
+    color: white; /* لون النص */
+    text-align: center; /* محاذاة النص في الوسط */
+    padding: 10px 0; /* تباعد داخلي للترويسة */
+}
+
+/* تنسيق المحتوى الرئيسي */
+main {
+    padding: 20px; /* تباعد داخلي للمحتوى الرئيسي */
+}
+
+/* تنسيق قسم المنتدى */
+#forum-section {
+    text-align: center; /* محاذاة النص في الوسط */
+    margin-top: 20px; /* هامش أعلى */
+}
+
+#forum-section h2 {
+    font-size: 1.5em; /* حجم العنوان */
+    margin-bottom: 20px; /* هامش أسفل */
+}
+
+#forum-section p {
+    font-size: 1.1em; /* حجم النص */
+    line-height: 1.5; /* ارتفاع السطر */
+    margin-bottom: 20px; /* هامش أسفل */
+}
+
+/* أزرار المشاركة */
+.share-buttons {
+    margin-bottom: 20px; /* هامش أسفل */
+    text-align: center; /* محاذاة النص في الوسط */
+}
+
+.share-button {
+    margin: 10px; /* هامش */
+    padding: 10px 20px; /* تباعد داخلي */
+    background-color: #3b5998; /* لون خلفية الزر */
+    color: white; /* لون النص */
+    border: none; /* إزالة الحدود */
+    border-radius: 5px; /* تدوير الزوايا */
+    cursor: pointer; /* تغيير شكل المؤشر */
+    font-size: 16px; /* حجم النص */
+}
+
+/* زر التعليق */
+.comment-button {
+    padding: 10px 20px; /* تباعد داخلي */
+    background-color: #4CAF50; /* لون خلفية الزر */
+    color: white; /* لون النص */
+    border: none; /* إزالة الحدود */
+    border-radius: 5px; /* تدوير الزوايا */
+    cursor: pointer; /* تغيير شكل المؤشر */
+    font-size: 16px; /* حجم النص */
+}
+
+.comment-button:hover {
+    background-color: #45a049; /* تغيير لون خلفية الزر عند تحويم المؤشر */
+}

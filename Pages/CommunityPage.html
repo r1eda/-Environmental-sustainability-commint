@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- تعيين ترميز الحروف وتحديد العرض للجهاز -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- عنوان الصفحة -->
+    <title>Community Activities</title>
+    <!-- تضمين ملف النمط CSS -->
+    <link rel="stylesheet" href="../Styles/CommunityPage.css">
+</head>
+<body>
+    <!-- ترويسة الصفحة -->
+    <header>
+        <!-- عنوان رئيسي -->
+        <h1>Community Activities</h1>
+    </header>
+    <!-- المحتوى الرئيسي للصفحة -->
+    <main>
+        <!-- قسم الأنشطة -->
+        <section id="activities-section">
+            <!-- عنوان فرعي -->
+            <h2>Join Community Activities</h2>
+            <!-- بطاقة النشاط الأولى -->
+            <div class="activity-card">
+                <!-- صورة النشاط -->
+                <img src="../images/cleanup_event.jpg" alt="Clean-Up Event" height="200">
+                <!-- تفاصيل النشاط -->
+                <div class="activity-details">
+                    <!-- عنوان النشاط -->
+                    <h3>Clean-Up Event</h3>
+                    <!-- نص توضيحي للنشاط -->
+                    <p>Join us for a community clean-up event to keep our environment clean and green.</p>
+                    <!-- زر للتوجيه إلى صفحة المزيد من المعلومات -->
+                    <button onclick="navigateTo('/clean-up-event')">Learn More</button>
+                </div>
+            </div>
+            <!-- بطاقة النشاط الثانية -->
+            <div class="activity-card">
+                <!-- صورة النشاط -->
+                <img src="../images/tree_planting.jpg" alt="Tree Planting Campaign" height="200">
+                <!-- تفاصيل النشاط -->
+                <div class="activity-details">
+                    <!-- عنوان النشاط -->
+                    <h3>Tree Planting Campaign</h3>
+                    <!-- نص توضيحي للنشاط -->
+                    <p>Help us plant trees and promote green spaces in our community.</p>
+                    <!-- زر للتوجيه إلى صفحة المزيد من المعلومات -->
+                    <button onclick="navigateTo('/tree-planting-campaign')">Learn More</button>
+                </div>
+            </div>
+            <!-- بطاقة النشاط الثالثة -->
+            <div class="activity-card">
+                <!-- صورة النشاط -->
+                <img src="../images/educational_workshop.jpg" alt="Educational Workshop" height="200">
+                <!-- تفاصيل النشاط -->
+                <div class="activity-details">
+                    <!-- عنوان النشاط -->
+                    <h3>Educational Workshop</h3>
+                    <!-- نص توضيحي للنشاط -->
+                    <p>Learn about environmental conservation and sustainability in our educational workshops.</p>
+                    <!-- زر للتوجيه إلى صفحة المزيد من المعلومات -->
+                    <button onclick="navigateTo('/educational-workshop')">Learn More</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- تضمين ملف السكريبت -->
+    <script src="../Script/script.js"></script>
+</body>
+</html>

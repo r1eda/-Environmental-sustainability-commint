@@ -1,0 +1,144 @@
+/* تحديد النص الأساسي والهوامش ولون خلفية الصفحة ومنع التمرير الأفقي */
+body {
+    font-family: Arial, sans-serif; /* نوع الخط */
+    margin: 0; /* إزالة الهوامش */
+    padding: 0; /* إزالة التباعدات الداخلية */
+    background-color: #a53636; /* لون خلفية الصفحة */
+    overflow-x: hidden; /* منع التمرير الأفقي */
+}
+
+/* تنسيق ترويسة الصفحة */
+header {
+    background-color: #4CAF50; /* لون خلفية الترويسة */
+    color: white; /* لون النص */
+    text-align: center; /* محاذاة النص في الوسط */
+    padding: 10px 0; /* تباعد داخلي للترويسة */
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 1); /* ظل */
+}
+
+/* تنسيق المحتوى الرئيسي */
+main {
+    padding: 20px; /* تباعد داخلي للمحتوى الرئيسي */
+}
+
+/* تنسيق العناوين الثانوية */
+h2 {
+    font-size: 1.5em; /* حجم العنوان */
+}
+
+/* تنسيق الصور */
+img {
+    margin-top: 10px; /* هامش أعلى للصور */
+}
+
+/* إزالة النقاط لقائمة غير مرتبة وتحديد تباعد القائمة */
+ul {
+    list-style-type: none; /* إزالة النقاط */
+    padding-left: 0; /* تحديد التباعد */
+}
+
+/* إضافة تحويلات Flexbox لتخطيط الأزرار */
+#buttons-section {
+    display: flex; /* عرض الأزرار بتخطيط مرن */
+    flex-wrap: wrap; /* تحديد تفاصيل التفاف العناصر */
+    justify-content: center; /* محاذاة العناصر في وسط الصفحة أفقيًا */
+}
+
+/* تنسيق الأزرار */
+.button {
+    display: inline-block; /* عرض الزر كبلوك متوازي مع النص */
+    margin: 10px; /* هامش بين الأزرار */
+    padding: 20px; /* تباعد داخلي للزر */
+    background-color: #4CAF50; /* لون خلفية الزر */
+    color: white; /* لون النص */
+    text-align: center; /* محاذاة النص في الوسط */
+    border-radius: 5px; /* تدوير الزوايا */
+    cursor: pointer; /* تغيير شكل المؤشر */
+    width: 150px; /* عرض الزر */
+    height: 150px; /* ارتفاع الزر */
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 1); /* ظل */
+}
+
+/* تنسيق الزر عند تحويل المؤشر */
+.button:hover {
+    background-color: #45a049; /* لون خلفية الزر عند التحويل */
+}
+
+/* تنسيق الرموز داخل الأزرار */
+.button i {
+    font-size: 60px; /* حجم الرمز */
+    margin-right: 5px; /* هامش اليمين */
+    padding: 10px; /* تباعد داخلي */
+}
+
+/* تنسيق النص داخل الأزرار */
+.button span {
+    font-size: medium; /* حجم النص */
+    margin-top: 5px; /* هامش الأعلى */
+}
+
+/* تنسيق قسم الترحيب */
+#welcome-section {
+    color: #f8f7f7; /* لون النص */
+    text-align: center; /* محاذاة النص في الوسط */
+    padding: 20px; /* تباعد داخلي */
+    border-radius: 5px; /* تدوير الزوايا */
+    background-color: #45a049; /* لون خلفية القسم */
+    margin: 10px; /* هامش */
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 1); /* ظل */
+}
+
+/* تنسيق العنوان في قسم الترحيب */
+#welcome-section h2 {
+    font-size: 1.5em; /* حجم العنوان */
+}
+
+/* تنسيق قسم الطقس */
+#weather-section {
+    flex: 1; /* تحديد نسبة العرض */
+    display: inline-block; /* عرض العنصر كبلوك متوازي */
+    text-align: center; /* محاذاة النص في الوسط */
+    padding: 20px; /* تباعد داخلي */
+    border-radius: 5px; /* تدوير الزوايا */
+    background-color: #d3ebd4; /* لون خلفية القسم */
+    margin: 10px; /* هامش */
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 1); /* ظل */
+}
+
+/* تنسيق العنوان في قسم الطقس */
+#weather-section h2 {
+    font-size: 1.5em; /* حجم العنوان */
+}
+
+/* تنسيق الصور في قسم الطقس */
+#weather-section img {
+    margin-top: 10px; /* هامش أعلى */
+}
+
+/* تنسيق قسم الأفكار */
+#ideas-section {
+    color: #f8f7f7; /* لون النص */
+    display: inline-block; /* عرض العنصر كبلوك متوازي */
+    flex-grow: 2; /* تحديد نسبة النمو */
+    padding: 10px; /* تباعد داخلي */
+    background-color: #45a049; /* لون خلفية القسم */
+    border-radius: 5px; /* تدوير الزوايا */
+    margin: 10px; /* هامش */
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 1); /* ظل */
+}
+
+/* تنسيق العنوان في قسم الأفكار */
+#ideas-section h2 {
+    font-size: 1.5em; /* حجم العنوان */
+}
+
+/* إزالة النقاط لقائمة غير مرتبة في قسم الأفكار وتحديد تباعد القائمة */
+#ideas-section ul {
+    list-style-type: none; /* إزالة النقاط */
+    padding-left: 0; /* تحديد التباعد */
+}
+
+/* تحديد تباعد العناصر داخل القائمة */
+#ideas-section li {
+    margin-bottom: 10px; /* هامش أسفل */
+}

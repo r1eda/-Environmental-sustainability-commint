@@ -1,0 +1,81 @@
+/* تحديد خط النص الافتراضي وإزالة الهوامش والحواف وتعيين لون خلفية الصفحة */
+body {
+    font-family: Arial, sans-serif; /* نوع الخط */
+    margin: 0; /* إزالة الهوامش */
+    padding: 0; /* إزالة الحواف */
+    background-color: #a53636; /* لون خلفية الصفحة */
+}
+
+/* تنسيق ترويسة الصفحة */
+header {
+    background-color: #4caf50; /* لون خلفية الترويسة */
+    color: white; /* لون النص */
+    text-align: center; /* محاذاة النص في الوسط */
+    padding: 20px 0; /* تباعد داخلي للترويسة */
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 1); /* ظل */
+}
+
+/* تنسيق العنوان الرئيسي */
+h1 {
+    margin: 0; /* إزالة هوامش العنوان */
+}
+
+/* تنسيق المحتوى الرئيسي */
+main {
+    padding: 20px; /* تباعد داخلي للمحتوى الرئيسي */
+}
+
+/* تنسيق قسم الأنشطة */
+#activities-section {
+    display: flex; /* عرض المحتوى بتخطيط مرن */
+    flex-wrap: wrap; /* تحديد تفاصيل التفاف العناصر */
+    justify-content: space-around; /* توزيع العناصر بالتساوي */
+}
+
+/* تنسيق بطاقة النشاط */
+.activity-card {
+    background-color: #ffffff; /* لون خلفية بطاقة النشاط */
+    width: 300px; /* عرض بطاقة النشاط */
+    margin-bottom: 20px; /* هامش أسفل بطاقة النشاط */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* ظل */
+    border-radius: 15px; /* تدوير الزوايا */
+    overflow: hidden; /* إخفاء التدفق الزائد للعناصر */
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 1); /* ظل */
+}
+
+/* تنسيق صورة النشاط */
+.activity-card img {
+    width: 100%; /* عرض الصورة */
+    height: 200px; /* ارتفاع الصورة */
+    object-fit: cover; /* تكييف الصورة */
+}
+
+/* تنسيق تفاصيل النشاط */
+.activity-details {
+    padding: 20px; /* تباعد داخلي لتفاصيل النشاط */
+}
+
+/* تنسيق عنوان تفاصيل النشاط */
+.activity-details h3 {
+    margin-top: 0; /* إزالة هامش أعلى لعنوان تفاصيل النشاط */
+}
+
+/* تنسيق نص تفاصيل النشاط */
+.activity-details p {
+    color: #555; /* لون النص */
+}
+
+/* تنسيق زر النشاط */
+.activity-details button {
+    background-color: #4caf50; /* لون خلفية الزر */
+    color: white; /* لون النص */
+    border: none; /* إزالة الحدود */
+    padding: 10px 20px; /* تباعد داخلي */
+    cursor: pointer; /* تغيير شكل المؤشر */
+    border-radius: 5px; /* تدوير الزوايا */
+}
+
+/* تنسيق زر النشاط عند تحويل المؤشر */
+.activity-details button:hover {
+    background-color: #45a049; /* تغيير لون خلفية الزر */
+}

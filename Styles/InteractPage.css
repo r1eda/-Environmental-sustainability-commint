@@ -1,0 +1,62 @@
+/* تنسيق النص وتحديد الهوامش ولون خلفية الصفحة ومنع التمرير الأفقي */
+body {
+    font-family: Arial, sans-serif; /* نوع الخط */
+    margin: 0; /* إزالة الهوامش */
+    padding: 0; /* إزالة التباعدات الداخلية */
+    background-color: #a53636; /* لون خلفية الصفحة */
+    overflow-x: hidden; /* منع التمرير الأفقي */
+}
+
+/* تنسيق ترويسة الصفحة */
+header {
+    background-color: #4CAF50; /* لون خلفية الترويسة */
+    color: white; /* لون النص */
+    text-align: center; /* محاذاة النص في الوسط */
+    padding: 10px 0; /* تباعد داخلي للترويسة */
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 1); /* ظل */
+}
+
+/* تنسيق المحتوى الرئيسي */
+main {
+    padding: 20px; /* تباعد داخلي للمحتوى الرئيسي */
+}
+
+/* تحديد تخطيط الأزرار ومحاذاتها وأنماط التصميم */
+#buttons-section {
+    display: flex; /* عرض الأزرار بتخطيط مرن */
+    flex-wrap: wrap; /* تحديد تفاصيل التفاف العناصر */
+    justify-content: center; /* محاذاة العناصر في وسط الصفحة أفقيًا */
+}
+
+.button {
+    display: inline-block; /* عرض الزر كبلوك متوازي مع النص */
+    margin: 10px; /* هامش بين الأزرار */
+    padding: 26px; /* تباعد داخلي للزر */
+    background-color: #4CAF50; /* لون خلفية الزر */
+    color: white; /* لون النص */
+    text-align: center; /* محاذاة النص في الوسط */
+    border-radius: 5px; /* تدوير الزوايا */
+    cursor: pointer; /* تغيير شكل المؤشر */
+    width: 150px; /* عرض الزر */
+    height: 150px; /* ارتفاع الزر */
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 1); /* ظل */
+    white-space: nowrap; /* منع النص من التقاطع مع نفسه */
+}
+
+/* تحديد تصميم الزر عند تحويل المؤشر */
+.button:hover {
+    background-color: #45a049; /* لون خلفية الزر عند التحويل */
+}
+
+/* تنسيق الرموز داخل الأزرار */
+.button i {
+    font-size: 60px; /* حجم الرمز */
+    margin-right: 5px; /* هامش اليمين */
+    padding: 10px; /* تباعد داخلي */
+}
+
+/* تنسيق النص داخل الأزرار */
+.button span {
+    font-size: 15px; /* حجم النص */
+    margin-top: 5px; /* هامش الأعلى */
+}

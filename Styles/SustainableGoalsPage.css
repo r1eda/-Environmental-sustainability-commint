@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif; /* تحديد نوع الخط */
+    margin: 0; /* إزالة الهوامش الخارجية */
+    padding: 0; /* إزالة التباعدات الداخلية */
+    background-color: #a53636; /* لون خلفية الصفحة */
+}
+
+header {
+    background-color: #4CAF50; /* لون خلفية الترويسة */
+    color: white; /* لون النص */
+    text-align: center; /* محاذاة النص في الوسط */
+    padding: 20px 0; /* تباعد داخلي للترويسة */
+}
+
+#goals-grid {
+    display: grid; /* استخدام شبكة CSS */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* توزيع العناصر في الشبكة */
+    gap: 20px; /* تحديد التباعد بين العناصر */
+    padding: 20px; /* تباعد داخلي للشبكة */
+}
+
+.card {
+    background-color: #fafafa; /* لون خلفية البطاقة */
+    border-radius: 10px; /* تدوير الزوايا */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* ظل */
+    overflow: hidden; /* إخفاء التجاوز */
+    transition: transform 0.3s ease; /* تحريك ناعم للتأثير عند التحويل */
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 1); /* ظل */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* التحريك لأعلى عند تحويل المؤشر */
+}
+
+.card img {
+    width: 100%; /* عرض الصورة بنسبة 100% */
+    height: auto; /* ارتفاع تلقائي */
+}
+
+.card-text {
+    padding: 10px; /* تباعد داخلي لنص البطاقة */
+    text-align: center; /* محاذاة النص في الوسط */
+}

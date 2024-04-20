@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- تعيين ترميز الحروف وتحديد العرض للجهاز -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- تضمين الرموز الخاصة بمكتبة Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- عنوان الصفحة -->
+    <title>Interact with Community</title>
+    <!-- تضمين ملف النمط CSS -->
+    <link rel="stylesheet" href="../Styles/InteractPage.css">
+</head>
+<body>
+    <!-- ترويسة الصفحة -->
+    <header>
+        <!-- عنوان رئيسي -->
+        <h1>Interact with Community</h1>
+    </header>
+    <!-- المحتوى الرئيسي للصفحة -->
+    <main>
+        <!-- وسط العناصر -->
+        <center>
+            <!-- قسم التفاعل مع المجتمع -->
+            <section id="interact-section">
+                <!-- عنوان فرعي -->
+                <h2>Interact with the Community</h2>
+                <!-- نص توضيحي -->
+                <p>Here you can share ideas, discuss environmental issues, and participate in forums and discussions.</p>
+                <!-- زر للانتقال إلى منتدى المجتمع -->
+                <div class="button" onclick="navigateTo('../Pages/community-forum.html')">
+                    <!-- رمز المنتدى -->
+                    <i class="material-icons">forum</i>
+                    <!-- فصل بين الرمز والنص -->
+                    <br />
+                    <!-- نص الزر -->
+                    <span>Go to Community Forum</span>
+                </div>
+                <!-- زر لمشاركة الأفكار -->
+                <div class="button" onclick="navigateTo('/share-ideas')">
+                    <!-- رمز الفكرة -->
+                    <i class="material-icons">lightbulb</i>
+                    <!-- فصل بين الرمز والنص -->
+                    <br>
+                    <!-- نص الزر -->
+                    <span>Share Your Ideas</span>
+                </div>
+            </section>
+        </center>
+    </main>
+    <!-- تضمين ملف السكريبت -->
+    <script src="../Script/script.js"></script>
+</body>
+</html>
